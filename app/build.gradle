@@ -5,7 +5,7 @@ android {
     buildToolsVersion '25.0.2'
 
     defaultConfig {
-        applicationId "com.example.bdb_wv"
+        applicationId "com.bdb.webview"
         minSdkVersion 15
         targetSdkVersion 15
         versionCode 1

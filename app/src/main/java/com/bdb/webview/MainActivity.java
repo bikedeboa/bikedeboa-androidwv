@@ -42,6 +42,8 @@ public class MainActivity extends Activity {
 		webSettings.setDomStorageEnabled(true);
 		webSettings.setGeolocationEnabled(true);
 		webSettings.setPluginState(WebSettings.PluginState.ON);
+		// Google login fix inside wv
+		webSettings.setUserAgentString("Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36");
 
 		webSettings.setGeolocationDatabasePath(this.getFilesDir().getPath());
 		webSettings.setAllowFileAccess(true);
@@ -94,7 +96,7 @@ public class MainActivity extends Activity {
 		});
 
 		// Use remote resource
-		webView.loadUrl("https://bikedeboa-dev.herokuapp.com");
+		webView.loadUrl("https://www.bikedeboa.com.br");
 	}
 
 
